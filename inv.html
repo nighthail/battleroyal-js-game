@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Pixelify Sans' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+</head>
+
+<body>
+  <div class="mainWrapper">
+    <div class="menuBox">
+
+      <div class="menuWrapper">
+        <button type="button" class="menuButton" id="mapButton">MAP</button>
+        <button type="button" class="menuButton" id="worldButton">WORLD</button>
+        <button type="button" class="menuButton" id="invButton">INVENTORY</button>
+        <button type="button" class="menuButton" id="saveButton">SAVE</button>
+        <button type="button" class="menuButton" id="loadButton">LOAD</button>
+      </div>
+
+      <div class="invBox" id="fullInv">
+        <div id="invGrid1a">
+          <div id="InvTitle">INVENTORY</div>
+
+          <div id="invGrid1b_InvBox" class="box">
+          </DIV>
+        </div>
+
+        <div id="invGrid1b">
+          <div id="InvTitle">DISCARD<br></div>
+          <div class="box" id="invGrid1b_discardBox">
+          </div>
+        </div>
+
+        <div id="invGrid2a">
+          <div id="InvTitle">WEAPON</div>
+
+          <div id="invGrid1b_weaponBox" class="box">
+          </div>
+
+        </div>
+        <div id="invGrid2b">
+          <div id="InvTitle">BUFF</div>
+          <div id="invGrid1b_buffBox" class="box"> </div>
+        </div>
+
+        <div id="invGrid2c">
+          <div id="InvTitle">HEAL</div>
+          <div id="invGrid1b_healthBox" class="box"> </div>
+        </div>
+
+
+        <div id="invGrid3a">
+          <div id="InvTitle">BODY</div>
+          <div id="HPinv">HP: DEFAULT </div>
+          <div id="AGinv">AG: DEFAULT </div>
+          <div id="STinv">ST: DEFAULT </div>
+          <div id="PEinv">PE: DEFAULT </div>
+          <div id="HDinv">HD: DEFAULT </div>
+        </div>
+        <div id="invGrid3b">
+        </div>
+        <div id="invGrid3c">
+          <div id="InvTitle">INJURIES</div>
+          broken ankle
+        </div>
+
+
+      </div>
+
+      <div class="bottomMenu">
+        <div id="timeText">Time left: </div><br>
+      </div>
+    </div>
+    <script type="module" src="map.js"></script>
+    <script type="module" src="world.js"></script>
+    <script type="module" src="menu.js"></script>
+    <script type="module" src="inv.js"></script>
+    <script type="module" src="char.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Pixelify Sans' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+</head>
+
+<body>
+  <div class="mainWrapper">
+    <div class="menuBox">
+
+      <div class="menuWrapper">
+        <button type="button" class="menuButton" id="mapButton">MAP</button>
+        <button type="button" class="menuButton" id="worldButton">WORLD</button>
+        <button type="button" class="menuButton" id="invButton">INVENTORY</button>
+        <button type="button" class="menuButton" id="saveButton">SAVE</button>
+        <button type="button" class="menuButton" id="loadButton">LOAD</button>
+      </div>
+
+
+      <div class="mapBox">
+        <div id="mapPointBox">
+          <div id="coast" class="movePoint"></div>
+          <div id="forest" class="movePoint"></div>
+          <div id="cave" class="movePoint"></div>
+          <div id="fields" class="movePoint"></div>
+          <div id="hills" class="movePoint"></div>
+          <div id="shed" class="movePoint"></div>
+          <div id="mapPointer"></div>
+
+        </div>
+      </div>
+
+      <div class="bottomMenu">
+        <div id="mapText">Default</div><br>
+      </div>
+    </div>
+
+
+    <script type="module" src="map.js"></script>
+    <script type="module" src="world.js"></script>
+    <script type="module" src="menu.js"></script>
+    <script type="module" src="inv.js"></script>
+    <script type="module" src="char.js"></script>
+
+
+</body>
+
+</html>

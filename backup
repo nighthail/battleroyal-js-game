@@ -1,0 +1,125 @@
+body {
+background-color: rgb(24, 24, 24);
+}
+
+.worldWrapper {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-auto-rows: 150px;
+width: 800px;
+margin: 0 auto;
+padding: 10px;
+justify-content: center;
+}
+
+.worldBox {
+grid-column: 1 / 3;
+grid-row: 1 / 3;
+border: 3px solid black;
+background-color: white;
+}
+
+
+.menuBox {
+grid-column: 1 / 3;
+grid-row: 3 / 3;
+border: 3px solid black;
+background-color: grey;
+font-family: Verdana,
+Geneva,
+Tahoma,
+sans-serif;
+}
+
+
+.menuWrapper {
+display: grid;
+grid-template-rows: 1fr;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.menuButton {
+padding-top: 10px;
+padding-bottom: 10px;
+background-color: rgb(149, 112, 152);
+border: 3px solid black;
+font-size: 20px;
+width: 100%;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+transition-duration: 0.4s;
+}
+
+.menuButton:hover {
+background-color: #4CAF50;
+color: white;
+}
+
+
+
+---
+
+// This doesnt work properly, needs rewrite.
+// make sure only one item can be selected (color coding not working!)
+/*
+window.onclick = e => {
+if (e.target.id.includes("item")) {
+if (currentlySelected == null) {
+document.getElementById(e.target.id).style.color = "blue"
+currentlySelected = e.target.id
+}
+else {
+document.getElementById(currentlySelected).style.color = "black"
+currentlySelected = e.target.id
+document.getElementById(e.target.id).style.color = "blue"
+console.log(currentlySelected)
+
+}
+} else {
+e = null
+currentlySelected = null
+}
+}
+*/
+
+
+
+// Drop item in invBox (NOTE: HAS TO HAVE LIMIT)
+document.getElementById('invGrid1b_invBox').onclick = e => {
+if (currentlySelected != null) {
+let dropItem = document.getElementById(currentlySelected)
+let currentBox = document.getElementById('invGrid1b_invBox')
+currentBox.appendChild(dropItem)
+}
+}
+
+
+// Drop item in weaponBox
+let weaponBoxOccupied = false
+document.getElementById('invGrid1b_weaponBox').onclick = e => {
+if (currentlySelected != null && weaponBoxOccupied == false) {
+let dropItem = document.getElementById(currentlySelected)
+let currentBox = document.getElementById('invGrid1b_weaponBox')
+currentBox.appendChild(dropItem)
+weaponBoxOccupied = true
+}
+}
+
+// Drop item in buffBox
+let buffBoxOccupied = false
+document.getElementById('invGrid1b_buffBox').onclick = e => {
+if (currentlySelected != null && buffBoxOccupied == false) {
+let dropItem = document.getElementById(currentlySelected)
+let currentBox = document.getElementById('invGrid1b_buffBox')
+currentBox.appendChild(dropItem)
+buffBoxOccupied = true
+}
+}
+
+
+// Drop item in discardBox
+document.getElementById('invGrid1b_discardBox').onclick = e => {
+if (currentlySelected != null) {
+let tossItem = document.getElementById(currentlySelected)
+tossItem.remove()
+}
+}

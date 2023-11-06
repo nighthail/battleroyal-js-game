@@ -1,0 +1,399 @@
+/* All pages */
+
+body {
+  background-color: rgb(24, 24, 24);
+}
+
+.mainWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 8fr;
+  height: 500px;
+  width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  justify-content: center;
+}
+
+.menuBox {
+  grid-column-start: 1;
+  grid-column-end: span 5;
+  grid-row-start: 1;
+  grid-row-end: span 1;
+  border: 3px solid black;
+  background-color: black;
+}
+
+.menuWrapper {
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.menuButton {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #e1ae9d;
+  border: 3px solid black;
+  font-size: 20px;
+  width: 100%;
+  font-family: 'Pixelify Sans';
+  transition-duration: 0.4s;
+}
+
+.menuButton:hover {
+  background-color: #41262f;
+  color: white;
+}
+
+
+/* World Function */
+
+.worldBox {
+  grid-column-start: 1;
+  grid-column-end: span 5;
+  grid-row-start: 2;
+  grid-row-end: span 2;
+  border: 3px solid black;
+  background-color: white;
+  background-image: url('img/bg_0.png');
+  background-size: cover;
+  width: 790px;
+  height: 400px;
+  visibility: visible;
+
+}
+
+#worldTextBox {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  font-size: 20px;
+  width: 650px;
+  height: 260px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+#worldText {
+  color: aliceblue;
+  font-size: 20px;
+  font-family: 'Pixelify Sans';
+}
+
+
+
+/* World - Bottom menu */
+
+.bottomMenu {
+  grid-column-start: 1;
+  grid-column-end: span 5;
+  grid-row-start: 1;
+  grid-row-end: span 1;
+  border: 3px solid black;
+  background-color: rgb(0, 0, 0);
+}
+
+.bottomMenuWrapper {
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.wButton {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #e1ae9d;
+  border: 3px solid black;
+  font-size: 20px;
+  width: 100%;
+  font-family: 'Pixelify Sans';
+  transition-duration: 0.4s;
+}
+
+.wButton:hover {
+  background-color: #41262f;
+  color: white;
+}
+
+
+/* World Function */
+
+.mapBox {
+  grid-column-start: 1;
+  grid-column-end: span 5;
+  grid-row-start: 2;
+  grid-row-end: span 2;
+  border: 3px solid black;
+  background-color: white;
+  background-image: url('img/map.png');
+  background-size: cover;
+  width: 790px;
+  height: 400px;
+  visibility: visible;
+
+}
+
+
+#mapPointBox {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.0);
+  padding: 40px;
+  font-size: 20px;
+  width: 450px;
+  height: 260px;
+  margin-left: 90px;
+  margin-top: 20px;
+}
+
+#mapText {
+  color: aliceblue;
+  font-size: 20px;
+  font-family: 'Pixelify Sans';
+}
+
+#mapPointer {
+  content: url('img/youAreHere.png');
+  position: absolute;
+}
+
+#mapPointer:hover {
+  content: url('img/moveHere.png');
+}
+
+#coast {
+  margin-top: 240px;
+  margin-left: 130px;
+  position: absolute;
+  content: url('img/moveHere.png');
+}
+
+#cave {
+  margin-top: 80px;
+  margin-left: 220px;
+  position: absolute;
+  content: url('img/moveHere.png');
+}
+
+
+#fields {
+  margin-top: 180px;
+  margin-left: 230px;
+  position: absolute;
+  content: url('img/moveHere.png');
+}
+
+
+#hills {
+  margin-top: 10px;
+  margin-left: 290px;
+  position: absolute;
+  content: url('img/moveHere.png');
+}
+
+
+#shed {
+  margin-top: 120px;
+  margin-left: 340px;
+  position: absolute;
+  content: url('img/moveHere.png');
+}
+
+
+#forest {
+  margin-top: 140px;
+  margin-left: 130px;
+  position: absolute;
+  content: url('img/moveHere.png');
+}
+
+.movePoint {
+  opacity: .0;
+}
+
+.movePoint:hover {
+  opacity: .7;
+}
+
+
+/* Inventory */
+.invBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  border: 3px solid black;
+  background-color: #41262F;
+  background-size: cover;
+  width: 790px;
+  height: 400px;
+  visibility: visible;
+  font-family: 'Pixelify Sans';
+  font-size: 25px;
+  color: #cbced1;
+  text-align: center;
+}
+
+#InvTitle {
+  font-family: 'Pixelify Sans';
+  font-size: 30px;
+  color: #E1AE9D;
+  text-align: center;
+}
+
+/* inventory */
+#invGrid1a {
+  grid-column-start: 1;
+  grid-column-end: span 1;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+}
+
+/* DISCARD ITEM */
+#invGrid1b {
+  grid-column-start: 1;
+  grid-column-end: span 1;
+  grid-row-start: 3;
+  grid-row-end: span 1;
+}
+
+/* discard box background */
+#invGrid1b_discardBox {
+  background-color: #2B161D;
+  width: 90%;
+  height: 40px;
+  border: 3px solid black;
+  margin-left: 4%;
+}
+
+#invGrid1b_discardBox:hover {
+  background-color: #13090d;
+}
+
+/* inv box background */
+#invGrid1b_InvBox {
+  background-color: #2B161D;
+  width: 90%;
+  height: 200px;
+  border: 3px solid black;
+  margin-left: 4%;
+}
+
+#invGrid1b_InvBox:hover {
+  background-color: #13090d;
+}
+
+
+/* items as buttons in inventory*/
+.invGrid1b_InvItems {
+  font-family: 'Pixelify Sans';
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  background-color: white;
+  border: 3px solid black;
+  box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.invGrid1b_InvItems:hover {
+  font-family: 'Pixelify Sans';
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  background-color: rgb(108, 108, 108);
+  border: 3px solid black;
+  box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Weapon slot */
+#invGrid2a {
+  grid-column-start: 2;
+  grid-column-end: span 1;
+  grid-row-start: 1;
+  grid-row-end: span 1;
+}
+
+/* weapon box background */
+#invGrid1b_weaponBox {
+  background-color: #2B161D;
+  width: 90%;
+  height: 40px;
+  border: 3px solid black;
+  margin-left: 4%;
+}
+
+#invGrid1b_weaponBox:hover {
+  background-color: #13090d;
+}
+
+
+/* Buff slot */
+#invGrid2b {
+  grid-column-start: 2;
+  grid-column-end: span 1;
+  grid-row-start: 2;
+  grid-row-end: span 1;
+}
+
+/* buff box background */
+#invGrid1b_buffBox {
+  background-color: #2B161D;
+  width: 90%;
+  height: 40px;
+  border: 3px solid black;
+  margin-left: 4%;
+}
+
+#invGrid1b_buffBox:hover {
+  background-color: #13090d;
+}
+
+/* Health slot */
+#invGrid2c {
+  grid-column-start: 2;
+  grid-column-end: span 1;
+  grid-row-start: 3;
+  grid-row-end: span 1;
+}
+
+/* health box background */
+#invGrid1b_healthBox {
+  background-color: #2B161D;
+  width: 90%;
+  height: 40px;
+  border: 3px solid black;
+  margin-left: 4%;
+}
+
+#invGrid1b_healthBox:hover {
+  background-color: #13090d;
+}
+
+/* Stats */
+#invGrid3a {
+  grid-column-start: 3;
+  grid-column-end: span 1;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+}
+
+/* Injuries */
+#invGrid3b {
+  grid-column-start: 3;
+  grid-column-end: span 1;
+  grid-row-start: 2;
+  grid-row-end: span 1;
+}
+
+/* Time left */
+#invGrid3c {
+  grid-column-start: 3;
+  grid-column-end: span 1;
+  grid-row-start: 3;
+  grid-row-end: span 1;
+
+}
+
+#invText {
+  color: aliceblue;
+  font-size: 20px;
+  font-family: 'Pixelify Sans';
+}

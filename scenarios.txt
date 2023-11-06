@@ -1,0 +1,118 @@
+scenarios
+
+Userstory - Boat
+HOUR 0
+Shed
+You wake up in a dirty shed, your head hurt but you feel otherwise alright.  <br> You look around. When did you get here?",
+  "On the ground right in front of you <br> there is a bag. <br>  "Inside the bag you find a" + weapon + " and a note and a map."
+  "The note says: Welcome Player 5. You have 12 hours until this island blows up. To survive you need to kill all other players before <br>
+  your time runs out. Ganbatte!
+
+MAP is available.
+
+HOUR 1
+fields
+The island is completely foreign to you, but its a nice day and the landscape is beautiful.
+If it wasnt for the looming fear of death, you might even go here for vacation.
+
+HOUR 2
+Coast
+A warm breeze blows in from the pristine sea. You squint, but there seem to be no nearby land.
+Stuck in the sand where sea meets shore, there is a boat.
+SEARCH
+BOAT FOUND
+Looking closer, you see that the boat seem in working condition and even has an engine!
+There seem to be no gas left though. Maybe you can find more somewhere?
+
+HOUR 3
+fields
+This feels too real to be a dream, but it has to be right? You try to think back, but your mind goes blank.
+All you can remember was you were on your way to school (to study? To work? What were you studying?).
+
+HOUR 4
+shed
+IF: BOAT FOUND
+Heading back to were you started, you spot someone in the distance.
+Player 2: "The katana is mine."
+You: "What?"
+Player 2: "I said: THE KATANA IS MINE." They launch at you with their japanese sword.
+*combat encounter*
+*player wins*
++ katana
++ SEARCH
+perception: success
+"Rummaging around, you find a filled can of gasoline! At least it smells like gasoline.
+Oof, it's heavy!"
++threat-level
+-AG
+
+HOUR 5
+fields
+This must be a dream. You would never kill anyone in real life, would you?
+You're even sure you used to be vegan. Wait, didn't you take a job as a slaughter house last summer?
+
+HOUR 6
+Coast
+Once you see the coast, you run towards the boat, stumbling but finding your footing.
+You pour in the gasoline into the enginge and push the boat out in the water. Crossing your fingers, you pull the string.
+The engine starts humming and the boat starts moving. Yes!
+Fuck this island you think as you drive towards the horizon.
+
+ENDING A: Boat
+
+
+
+Userstory - CAVE
+HOUR 0
+Shed
+You wake up in a dirty shed, your head hurt but you feel otherwise alright.  <br> You look around. When did you get here?",
+  "On the ground right in front of you <br> there is a bag. <br>  "Inside the bag you find a" + weapon + " and a note and a map."
+  "The note says: Welcome Player 5. You have 12 hours until this island blows up. To survive you need to kill all other players before <br>
+  your time runs out. Ganbatte!
+
+MAP is available.
+
+HOUR 1
+cave
+The island is completely foreign to you, but its a nice day. Despite the sun, you head towards the dark shades of a cave in the mountain nearby.
++SEARCH
+After some searching, you find an entrance that looks like the one on the map, albeit smaller. Pulling on the handle, it seems to be locked.
+Maybe the people who kidnapped you are inside?
+
+HOUR 2
+forest
+Bird song fill the tree crowns above you. Suddenly, you hear a branch crack and someone swearing.
+You: Hello?
+Player 1: Uhm... Don't kill me, ok?
+A man steps forward, shivering and seemingly pale.
++FIGHT
+(he has an OP weapon, but will be dead at Hour 4 in the hills)
+*Combat starts*
+*Player wins*
++ Golden Key
++ Shock Sword
+
+HOUR 3
+Cave
+IF: golden key AND gate found
+You pull out the golden key and use it in the lock at the gate. The lock clicks and slides open.
+Curious, you peak inside, but cannot see much. You take a deep breath and walk inside.
+You take a few steps in and you're starting to see outlines as your eyes start to adjust.
+Person: "uhm... hello. You werent supposed to see this"
+A person who looks like a programmer is sitting shrimplike over a laptop. They look up at you, shyly.
+YOU: Who are you?
+Programmer: I'm the programmer. I made this game.
+You: What game? Release me at once!
+Programmer: I didn't wanna hurt anyone, i just wanted to learn javascript.
+Tired, you roll your eyes.
+Programmer: I cant let you leave you know.
+IF EMP is equipped
+You use the emp in your inventory, and suddenly the programemr crumbles over.
+Programmer: "Nooo, my laptop!"
+They kneel over and starts crying.
+"I forgot to make a backup..."
+You rolls your eyes yet again. What a n00b.
+You: "Can I leave now?"
+Behind the programmer, you see a red door with an exit sign. Weird how you didn't see it before.
+As you open it, you look over your shoulder one last time. This was a weird experience but at least you are alive.
+ENDING B: Cave

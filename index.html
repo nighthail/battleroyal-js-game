@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <div class="fightBox">
+      <img src="img/enemy.jpg" style="width: 40%; max-height: 100%;">
+      <img src="img/mummy.jpg" style="width: 45%; max-height: 100%;">
+
+    </div>
+
+    <div class="apBox">
+      <div class="aPNum" id="aPNum">
+        6 / 6 <br>
+      </div>
+
+      <button type="button" id="aPBtn_atk" class="aPButton">
+        3: ATTACK</button> <br>
+      <button type="button" id="aPBtn_hatk" class="aPButton">
+        4: HEAVY ATTACK</button> <br>
+      <button type="button" id="aPBtn_dodge" class="aPButton">
+        4: DODGE</button> <br>
+      <button type="button" id="aPBtn_flee" class="aPButton">
+        FLEE</button> <br>
+      <br><br>
+
+      <button type="button" id="aPBtn_clear" class="aPButton">
+        CLEAR ACTIONS</button> <br>
+
+      <button type="button" id="aPBtn_execute" class="aPButton">
+        EXECUTE</button> <br>
+
+
+    </div>
+    <div class="statsBox">
+
+      <div class="statsWrapper">
+        <div class="enemyStats">
+          <div id="enemyName">Enemy</div>
+          <br>
+          <div id="eHP">DEFAULT</div>
+
+        </div>
+        <div class="myStats">
+          <div id="playerName">You</div>
+          <br>
+          <div id="playerHP">DEFAULT</div>
+        </div>
+
+        <div class="plannedActions" id="plannedActions">
+          STACK: <br>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script type="module" src="index.js"></script>
+  <script type="module" src="char.js"></script>
+
+
+</body>
+
+</html>
